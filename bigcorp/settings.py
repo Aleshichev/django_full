@@ -29,9 +29,10 @@ INSTALLED_APPS = [
     'django_email_verification',
     
     #apps
+    "account.apps.AccountConfig",
     "shop.apps.ShopConfig",
     "cart.apps.CartConfig",
-    "account.apps.AccountConfig",
+    "payment.apps.PaymentConfig",
 ]
 
 MIDDLEWARE = [
