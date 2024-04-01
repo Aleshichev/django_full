@@ -129,9 +129,18 @@
         id="complete-order"
         type="submit"
         class="btn btn-primary navbar-btn text-white"
+        name='stripe-payment'
+        val="stripe-payment"
       >
         &nbsp; Complete order
       </button>
+      <button
+      id="complete-order"
+      type="submit"
+      class="btn btn-primary navbar-btn text-white"
+    >
+      &nbsp; Complete order
+    </button>
 
       <br />
     </form>
@@ -142,7 +151,7 @@
 
 <!-- Ajax integration -->
 
-<script>
+{% comment %} <script>
   $(document).on("submit", function (e) {
     e.preventDefault();
 
@@ -169,6 +178,6 @@
       },
     });
   });
-</script>
+</script> {% endcomment %}
 
 {% endblock %}
